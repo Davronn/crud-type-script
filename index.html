@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Record Form</h1>
+        <form id="studentForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+            <label for="birthDate">Birth Date:</label>
+            <input type="text" id="birthDate" required>
+            <label for="position">Position:</label>
+            <select id="position" required>
+                <option value="">Select Position</option>
+                <option value="ReactJs Developer">ReactJs Developer</option>
+                <option value="NodeJs Developer">NodeJs Developer</option>
+                <option value="Go Developer">Go Developer</option>
+                <!-- Add more options as needed -->
+            </select>
+            <label for="typePosition">Type of Position:</label>
+            <select id="typePosition" required>
+                <option value="">Select Type of Position</option>
+                <option value="junior">Junior</option>
+                <option value="middle">Middle</option>
+                <option value="senior">Senior</option>
+            </select>
+            <label for="salary">Salary:</label>
+            <input type="number" id="salary" required>
+            <label for="isMarried">Married:</label>
+            <input type="checkbox" id="isMarried">
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Table to disp  lay student records -->
+        <h2>Student Records</h2>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Birth Date</th>
+                    <th>Position</th>
+                    <th>Type of Position</th>
+                    <th>Salary</th>
+                    <th>Married</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody"></tbody>
+        </table>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
